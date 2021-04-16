@@ -64,3 +64,4 @@ sonarqube {
         property "sonar.java.target", "1.6"
     }
 }
+*/
