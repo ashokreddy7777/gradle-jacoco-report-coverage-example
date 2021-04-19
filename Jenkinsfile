@@ -38,11 +38,11 @@ pipeline {
                 runSonar()
             }
         }
-        /*stage('cleanup') {
+        stage('cleanup') {
             steps {
                 cleanWs()
             }
-        }*/
+        }
     }
     post {
         failure {
