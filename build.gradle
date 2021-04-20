@@ -12,7 +12,7 @@ plugins {
     id "org.sonarqube" version "1.1"
 }
 */
-//apply plugin: 'java'
+apply plugin: 'java'
 apply plugin: 'jacoco'
 //apply plugin: 'sonar'
 group = 'com.github.jitpack'
@@ -50,9 +50,9 @@ artifacts {
 jacocoTestReport {
     reports {
         xml.enabled true
-        xml.destination "${buildDir}/reports/jacoco.xml"
+        xml.destination file("${buildDir}/reports/jacoco.xml")
         csv.enabled false
-        html.destination "${buildDir}/reports/jacoco-html"
+        html.destination file("${buildDir}/reports/jacoco-html")
     }
 }
 /*
